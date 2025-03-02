@@ -7,29 +7,63 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        :root {
+            /* Replace these colors with ones matching your images */
+            --primary-color: #2e2f4e;     /* Main brand color */
+            --secondary-color: #eb8673;    /* Secondary brand color */
+            --accent-color: #f3c59e;       /* Accent color for highlights */
+            --background-light: #5c75b7;   /* Light background */
+            --background-dark: #02172c;    /* Dark background */
+            --text-light: #fbf8cc;
+            --text-dark: #fbf8cc;
+        }
+
         .section-padding {
             padding: 80px 0;
         }
-        .team-member {
-            margin-bottom: 30px;
+
+        .navbar-dark.bg-dark {
+            background-color: var(--background-dark) !important;
         }
-        .team-member img {
-            max-width: 200px;
-            border-radius: 50%;
+
+        .bg-primary {
+            background-color: var(--primary-color) !important;
         }
+
+        .bg-light {
+            background-color: var(--background-light) !important;
+        }
+
         .service-card {
             padding: 20px;
             margin-bottom: 30px;
             transition: transform 0.3s;
+            background-color: var(--text-light);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+
         .service-card:hover {
             transform: translateY(-10px);
         }
+
         .hero-section {
             margin-top: 56px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
         }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
         .form-error {
-            color: #dc3545;
+            color: var(--accent-color);
             font-size: 0.875rem;
             display: none;
         }
